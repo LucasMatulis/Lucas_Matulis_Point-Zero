@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - parede
+  - Raio
+  - Laser
+  - armadilha
+  - tiro
+  - tiro aliada
+  - Inimigo
+  - AntiGravidade
+  - Saida
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - chao
+  - parede
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BG
+    uniqueID: 2622999363
+    locked: 0
+  - name: enfeites
+    uniqueID: 1973574209
+    locked: 0
+  - name: enfeites 2
+    uniqueID: 409058327
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

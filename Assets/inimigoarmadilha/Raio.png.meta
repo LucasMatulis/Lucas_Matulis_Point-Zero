@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 36f8b93d0489d1740b621bcf9cb03c1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -54352059820054842
+    second: Raio_0
+  - first:
+      213: -8882748027568318514
+    second: Raio_1
+  - first:
+      213: 5100368052329781594
+    second: Raio_2
+  - first:
+      213: 483562542807698585
+    second: Raio_3
+  - first:
+      213: 8925949707897961192
+    second: Raio_4
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 189, y: 710, z: 916, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raio_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 730
+        width: 520
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23eacdddf452a7e409768f90f38aee9c
+      internalID: -54352059820054842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raio_1
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 735
+        width: 416
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773d49d1916855547aa68518cad02065
+      internalID: -8882748027568318514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raio_2
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 486
+        width: 98
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a491cba504cfd429ce7b9ddf23332b
+      internalID: 5100368052329781594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raio_3
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 22
+        width: 328
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802553cd71d954f4cb402b82ac9b4c3a
+      internalID: 483562542807698585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raio_4
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 26
+        width: 305
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41455f5368f2db24ba411e2ceb3fd4de
+      internalID: 8925949707897961192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -207, y: 2}
+      - {x: -353, y: 2}
+      - {x: -357, y: -1}
+      - {x: -360, y: -51}
+      - {x: -362, y: 2}
+      - {x: -517, y: 2}
+      - {x: -517, y: -630}
+      - {x: -454, y: -700}
+      - {x: -216, y: -700}
+      - {x: -179, y: -659}
+      - {x: -179, y: -155}
+      - {x: -188, y: -69}
+    - - {x: 286, y: -450}
+      - {x: 216, y: -476}
+      - {x: 205, y: -521}
+      - {x: 205, y: -616}
+      - {x: 251, y: -677}
+      - {x: 413, y: -677}
+      - {x: 486, y: -613}
+      - {x: 486, y: -490}
+      - {x: 458, y: -450}
+    - - {x: 266, y: 700}
+      - {x: 194, y: 484}
+      - {x: 194, y: 239}
+      - {x: 237, y: -1}
+      - {x: 450, y: -1}
+      - {x: 524, y: 167}
+      - {x: 524, y: 404}
+      - {x: 455, y: 700}
+    - - {x: -222, y: 441}
+      - {x: -216, y: 461}
+      - {x: -232, y: 411}
+      - {x: -223, y: 409}
+      - {x: -201, y: 435}
+      - {x: -201, y: 590}
+      - {x: -223, y: 700}
+      - {x: -307, y: 700}
+      - {x: -328, y: 652}
+      - {x: -323, y: 610}
+      - {x: -328, y: 640}
+      - {x: -330, y: 700}
+      - {x: -462, y: 700}
+      - {x: -530, y: 601}
+      - {x: -530, y: 497}
+      - {x: -495, y: 458}
+      - {x: -454, y: 445}
+      - {x: -528, y: 290}
+      - {x: -477, y: 11}
+      - {x: -242, y: 11}
+      - {x: -201, y: 288}
+      - {x: -201, y: 379}
+      - {x: -241, y: 410}
+    - - {x: -306, y: 267}
+      - {x: -308, y: 279}
+      - {x: -306, y: 281}
+      - {x: -306, y: 272}
+      - {x: -305, y: 267}
+      - {x: -306, y: 266}
+      - {x: -306, y: 263}
+      - {x: -305, y: 263}
+    - - {x: -367, y: 384}
+      - {x: -341, y: 401}
+      - {x: -346, y: 387}
+      - {x: -356, y: 369}
+    - - {x: -231, y: 406}
+      - {x: -228, y: 407}
+      - {x: -228, y: 410}
+      - {x: -231, y: 411}
+      - {x: -233, y: 409}
+    - - {x: -446, y: 542}
+      - {x: -448, y: 554}
+      - {x: -442, y: 558}
+      - {x: -436, y: 531}
+    - - {x: -232, y: 551}
+      - {x: -228, y: 542}
+      - {x: -227, y: 541}
+      - {x: -226, y: 542}
+    - - {x: -234, y: 577}
+      - {x: -234, y: 580}
+      - {x: -233, y: 578}
+      - {x: -234, y: 575}
+      - {x: -233, y: 575}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
