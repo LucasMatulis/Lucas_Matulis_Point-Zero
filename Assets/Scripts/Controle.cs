@@ -12,6 +12,7 @@ public class Controle : MonoBehaviour
     public float starthealth = 100;
     public float descontodevida;
     public Text vidabarra;
+    public AudioSource somvida;
 
     [Header("Movimento")]
     public Rigidbody2D rb2d;
@@ -37,6 +38,7 @@ public class Controle : MonoBehaviour
 
     [Header("Dano")]
     public float TrapJumpForce;
+    public AudioSource choque;
 
     [Header("Gravidade")]
     public bool powerUpAntiGravidade = false;
@@ -51,11 +53,13 @@ public class Controle : MonoBehaviour
     public Image armahud;
     public float municao = 0;
     public Text AmmoInfo;
+    public AudioSource upgradeArma;
 
 
     [Header ("Checks")]
     public bool groundCheck;
     public bool wallCheck;
+    public bool leftWallCheck;
     public bool wallSlinding;
     public bool viradoDireita = false;
     public bool jump = false;
@@ -84,6 +88,7 @@ public class Controle : MonoBehaviour
     {
         groundCheck = Physics2D.OverlapCircle(pe.position, DistanciaChao, Solido);
         wallCheck = Physics2D.Raycast(mao.position, transform.right, DistanciaParede, Solido);
+        leftWallCheck = Physics2D.Raycast(mao.position, transform.right, -DistanciaParede, Solido);
 
         BarraVida();
 
@@ -103,10 +108,17 @@ public class Controle : MonoBehaviour
 
     private void CheckWallSling()
     {
-        if (wallCheck && !groundCheck && rb2d.velocity.y * gravidade < 0 && inputX != 0)
+        if (wallCheck || leftWallCheck)
         {
-            wallSlinding = true;
-            
+            if (!groundCheck && rb2d.velocity.y * gravidade < 0 && inputX != 0)
+            {
+                wallSlinding = true;
+
+            }
+            else
+            {
+                wallSlinding = false;
+            }
         }
         else
         {
@@ -194,7 +206,7 @@ public class Controle : MonoBehaviour
             andando = false;
         }
 
-        if (Input.GetAxis("Horizontal") != 0 && groundCheck)
+        if (Input.GetAxis("Horizontal") != 0 && groundCheck && !wallSlinding)
         {
             if (!andar.isPlaying)
             {
@@ -312,6 +324,10 @@ public class Controle : MonoBehaviour
     {
         if (collision.gameObject.tag == "Raio")
         {
+            choque.Play();
+
+            wallSlinding = false;
+
             Vector2 force = new Vector2(wallJumpForce * direcaopulo.x * -direcaoJogador* gravidade, TrapJumpForce * direcaopulo.y* gravidade);
 
             rb2d.velocity = Vector2.zero;
@@ -337,6 +353,21 @@ public class Controle : MonoBehaviour
         if (collision.gameObject.tag == "Saida")
         {
             Application.LoadLevel(Application.loadedLevel);
+        }
+
+        if(collision.gameObject.tag == "Upgrade arma")
+        {
+            upgradeArma.Play();
+        }
+
+        if (collision.gameObject.tag == "Vida" && vida < starthealth)
+        {
+            somvida.Play();
+        }
+
+        if (collision.gameObject.tag == "Upgrade Vida")
+        {
+            somvida.Play();
         }
     }
 
@@ -366,6 +397,18 @@ public class Controle : MonoBehaviour
             rb2d.gravityScale *= -1;
 
             transform.localRotation = Quaternion.Euler(0, 0, escala);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (viradoDireita)
+        {
+            Gizmos.DrawLine(mao.position, new Vector3(mao.position.x + DistanciaParede, mao.position.y, mao.position.z));
+        }
+        else
+        {
+            Gizmos.DrawLine(mao.position, new Vector3(mao.position.x - DistanciaParede, mao.position.y, mao.position.z));
         }
     }
 

@@ -13,6 +13,9 @@ TagManager:
   - Inimigo
   - AntiGravidade
   - Saida
+  - Upgrade arma
+  - Vida
+  - Upgrade Vida
   layers:
   - Default
   - TransparentFX

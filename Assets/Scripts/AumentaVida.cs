@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AumentaVida : MonoBehaviour
+public class aumentaVida : MonoBehaviour
 {
     public Controle controle;
 
